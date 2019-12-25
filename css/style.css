@@ -330,15 +330,15 @@
 	display: flex;
 	justify-content: space-between;	
 }
-.popular-one {
+.popular-item--one {
 	position: relative;
 	width: 870px;
 	background-color: #f8f8f8;
 }
-.popular-item {
+.popular-item--twoo {
 	position: relative;
 }
-.popular-item:hover .popular-item--hover{
+.popular-item--twoo:hover .popular-item-hover{
 	visibility: visible;
 	opacity: 1;
 }
@@ -372,10 +372,11 @@
 	margin-right: 3px;
 }
 /*---------- populart-item--hover ----------*/
-.popular-item--hover {
+.popular-item-hover {
 	visibility: hidden;
 	opacity: 0;
 	position: absolute;
+	z-index: 3;
 	left: 0;
 	top: 0;
 	height: 650px;
