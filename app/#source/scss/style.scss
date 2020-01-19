@@ -28,8 +28,8 @@
 	align-items: center;
 	justify-content: center;
 	padding: 23px 33px;
-	min-width: 180px;
-	height: 59px;
+	// max-width: 180px;
+	max-height: 59px;
 	border: 2px solid #737373;
 
 	color: #454647;
@@ -322,8 +322,8 @@
 }
 /*---------- section popular ----------*/
 .popular {
-	margin-top: 62px;
-	margin-bottom: 62px;
+	margin-top: 60px;
+	margin-bottom: 60px;
 	max-height: 1447px;
 	border-top: 1px solid #eee;
 	border-bottom: 1px solid #eee;
@@ -600,6 +600,7 @@
 }
 /*---------- section lookbook ----------*/
 .lookbook {
+	background-color: #f8f8f8;
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
@@ -607,22 +608,25 @@
 .lookbook-item {
 	display: flex;
 	align-items: flex-end;
-	justify-content: space-evenly;
-	width: 663px;
-	height: 530px;
+	width: 33.333%;
+	max-width: 663px;
+	max-height: 530px;
 	background-color: #f8f8f8;
 }
-
+.lookbook-img {
+	width: 40%;
+}
 .lookbook-text {
+	padding-right: 5px;
 	display: flex;
-	align-items: flex-end;
 	flex-direction: column;
-	justify-content: space-between;
-	margin-bottom: 110px;
-	width: 295px;
-	height: 320px;
+	justify-content: space-around;
+	width: 60%;
+	height: 100%;
 }
 .lookbook-text-title {
+	margin-top: 2vw;
+	flex: none;
 	display: flex;
 	align-items: flex-end;
 	flex-direction: column;
@@ -630,7 +634,7 @@
 .lookbook-text-title__bold {
 	color: #575153;
 	font-weight: 700;
-	font-size: 48px;
+	font-size: 3vw;
 	font-family: 'Montserrat', sans-serif;
 	letter-spacing: 2.4px;
 	text-transform: uppercase;
@@ -640,14 +644,21 @@
 
 	color: #575153;
 	font-weight: 300;
-	font-size: 48px;
+	font-size: 3vw;
 	font-family: 'Montserrat', sans-serif;
 	letter-spacing: 2.4px;
 	text-transform: uppercase;
 }
 .lookbook-text__desc {
+	margin-top: 1.5vw;
+	flex: auto;
 	text-align: right;
-
+	max-height: 95px;
+	overflow: hidden;
+	@include mdf3_1199 {
+		line-height: 18px;			
+		max-height: 93px;
+	}
 	color: #727272;
 	line-height: 25px;
 	font-weight: 400;
@@ -658,25 +669,31 @@
 	font-family: 'FontAwesome';
 }
 .lookbook-btn {
-	margin-top: 10px;
+	flex: 0 1 auto;
+	margin: 20px auto;
+	padding: 1.5vw;
+	// display: flex;
+	// margin-top: 10px;
 }
 /*========== FOOTER ================*/
 /*----- footer-information --------*/
 .footer-section {
-	margin-top: 100px;
+	margin-top: 60px;
 	background-color: #f8f8f8;
 }
 .footer-navigation-row {
-	display: flex;
-	margin-top: 100px auto 0;
-	padding-top: 63px;
-	padding-bottom: 63px;
-	width: 1200px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	max-width: 1200px;
+	width: 100%;
 }
 .footer-navigation-link {
 	display: flex;
 	justify-content: space-between;
-	width: 860px;
+	width: 100%;
+}
+.footer-nav-block {
+	width: 20%;
 }
 .footer-block__title {
 	color: #575153;
@@ -700,8 +717,8 @@
 	color: #000;
 }
 /*-------footer contact--------*/
-.footer-contact {
-	margin-left: 90px;
+.contact-text {
+	margin-top: 30px;
 }
 .contact-text * {
 	margin-top: 15px;
