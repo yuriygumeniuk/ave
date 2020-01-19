@@ -285,7 +285,6 @@
         "-webkit-hyphens",
         "-moz-hyphens",
         "hyphens",
-        "letter-spacing",
         "src",
         "opacity",
         "-ms-filter:\\'progid:DXImageTransform.Microsoft.Alpha",
@@ -434,7 +433,8 @@
         "font-size-adjust",
         "font-stretch", 
         "font-size",
-        "font-family"
+        "font-family",
+        "letter-spacing"
     ],
     [
         "$include"
