@@ -198,21 +198,23 @@
 }
 /*------navigation right---------*/
 .navigation-search {
+	position: relative;
 	z-index: 9;
 	display: flex;
 	align-items: baseline;
 	flex: none;
 }
-.header-search {
-	position: relative;
-}
 .header-search__text {
+	position: relative;
 	padding-right: 30px;
 	padding-left: 11px;
 	width: 190px;
 	height: 30px;
 	border: 1px solid #e7e7e7;
 	background-color: #f8f8f8;
+	&.err {
+		border: 1px solid #c09;
+	}
 }
 .header-search__btn {
 	position: absolute;
